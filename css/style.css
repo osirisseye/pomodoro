@@ -2,8 +2,8 @@ body {
 	background-color:rgb(80,0,0);
 }
 
-form {
-	
+#container1 {
+	border:solid;
 }
 #timer {
 	border:;
@@ -15,6 +15,6 @@ form {
 	color: white;
 	border:none;
 }
-#Break-input{
+#Break-input {
 	color: white;
 }
