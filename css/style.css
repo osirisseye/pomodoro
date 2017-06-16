@@ -10,11 +10,11 @@ body {
 	color:white;
 }
 
-#break {
+#break, #work {
 	background-color:transparent;
 	color: white;
 	border:none;
 }
-#Break-input {
+#input-name {
 	color: white;
 }

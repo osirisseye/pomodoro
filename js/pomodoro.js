@@ -1,5 +1,6 @@
 window.onload = function (){
 
+	//1st function of timer for our break 
 	$("#start").on("click", function() {
 
 		btime = document.getElementById("break").value//getting value of user's input
@@ -11,22 +12,22 @@ window.onload = function (){
 		   n--;
 		   var minutes = "0" + Math.floor(n / 60);
 		   var seconds = "0" + (n - minutes * 60);
-		   //tleft = n;
-    	   document.getElementById("left").innerHTML = minutes.substr(-2) + ":" + seconds.substr(-2);;
-
-		   //$("#left").innerHTML = n;
-
+    	   document.getElementById("left").innerHTML = minutes.substr(-2) + ":" + seconds.substr(-2);
 		   if(n == 0){
 		      clearInterval(tm);
 		      
 		   }
 		   
-		   console.log(n);
+		   //console.log(n);
 		}
 	});
+
+
+
+
 }
 
-/*
+/* Basic code for mm:ss format
 var minutes = "0" + Math.floor(n / 60);
 var seconds = "0" + (n - minutes * 60);
 return minutes.substr(-2) + ":" + seconds.substr(-2);
