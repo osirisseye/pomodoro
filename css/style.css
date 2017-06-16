@@ -2,7 +2,19 @@ body {
 	background-color:rgb(80,0,0);
 }
 
+form {
+	
+}
 #timer {
-	border:solid 2px white;
+	border:;
 	color:white;
+}
+
+#break {
+	background-color:transparent;
+	color: white;
+	border:none;
+}
+#Break-input{
+	color: white;
 }

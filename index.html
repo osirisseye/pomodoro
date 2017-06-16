@@ -7,8 +7,9 @@
   <title>Pomodoro Clock - regain your productivity</title>
   <meta name="description" content="Pomodoro clock web app">
   <meta name="author" content="Lukasz Andruchow">
-  
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css"/>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -18,7 +19,12 @@
 <body>
 	<div id="wrapper">
 	  <div id="container1">
-	  	<button type="button" id="start">Click here to start working</button>
+	  	<div id="Break-input">Set your break<form label="Break">
+		  		<input type="number" id="break" name="quantity" min="5" max="15" value="5">
+			</form>
+			
+		</div>
+	  	<button type="button" id="start">Start the countdown</button>
 
 	  </div>
 
@@ -31,5 +37,6 @@
 
   <script src="js/pomodoro.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
 </body>
 </html>
